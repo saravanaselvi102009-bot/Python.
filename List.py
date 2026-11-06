@@ -1,88 +1,85 @@
-# a=["a",'b','''c''',100,500.0,True]
-# print(a)
-# print(type(a))
+# nums_list = [10,20,3040,50,60,70,80]
 
-# []__Can pass int,float,str,boolean
-# list, tuple........
+# #Accessabiliy
 
-# print(a[3])
-# print(a[-5])
-# print(a[100])  Index error
+# print(nums_list[0])
+# print(nums_list[2])
+# print(nums_list[:])
 
-# print(a[1:4])
-# print(a[-1:-3:-2])
-# print(a[::-1])
+# # List data structures characteristics
 
-# b= list(range(1,11))
-# print(b)
+# #Ordered
+# fruits = ["Apple","Banana","Mango"]
+# print(fruits[0])
 
-# x=int(input("Enter a number:"))
-# if x==1 in 100:
-#     print("Number name")
-# else:
-#     print("Not determined")
-#If a number is given we have to get its number name.
+# # Mutable
+# fruits = ["Apple","Banana","Mango"]
+# fruits[1] = "Orange"
+# print(fruits)
+
+# # Allows duplicate values
+# numbers = [10,20,10,30]
+# print(numbers)
+
+# #Can store diferent data types
+# data = [101,"Python",85.5,True]
+# print(data)
+
+# #Common list operations
+# numbers = [10,20,30,40]
+# print(len(numbers))
+
+# # Add an element
+
+# # Append
+# numbers = [10,20,30]
+# numbers.append(40)
+# print(numbers)
+
+# # Insert
+# numbers = [10,20,30]
+# numbers.insert(1,20)
+# print(numbers)
+
+# Slicing
+
+numbers = [10,20,30,40,50]
+
+# Basic slicing 
+print(numbers[1:4])
+
+# From beginning to a position 
+print (numbers[:4])
+
+# From a position to end
+print (numbers[2:])
+
+# Entire list
+print(numbers[:])
+
+# Using step
+print(numbers[::-2])
+
+# Reverse step
+print(numbers[::-1])
 
 
-#append
-#x=[10,20,30,40,50,'python',500,500]
-# x.append(60)
-# print(x)
+# Nested list
 
-#insert
-# y=[2,8,1,'Hello',33,9]
-# y.insert(2,'Hello')
-# print(y)
+matrix = [[1,2],[3,4],[5,6]]
+print(matrix)
 
-#COUNT
-# z=[5,89,24,'Papa',5,'hi']
-# print(z.count(5))
+# Example Program
 
-#index
-# a=['Sara',18,22,'ammu',3]
-# print(a.index(22))
-# print(a[-3])
+students=["YAMINI","GREESHMA","JAHNAVI","LAKSHMAN","SARAVANA","SANJANA","TEJA","CHERRY"]
 
-#pop
-# b=[5,99,25,73,17]
-# print(b.pop())
+students.append("PAPA")
+students.insert(2,"RUTHVIK")
+students.remove("YAMINI")
+del students[3]
+students.pop()
 
-#remove
-# c=[20,'Aadvik',25,15,'Pass']
-# c.remove('Aadvik')
-# print(c)
-
-#extend
-# order1 = ['Python','ReactJs','NextJS']
-# order1.extend('MySQL')
-# print(order1)
-
-# Remove
-# n5 = [10,20,30,10,20,10,20]
-# n5.remove(20)
-# print(n5)
-
- ##Tuple-----function examples-----
-
-# x=[22,18,3,24,7]
-# print(len(x))
-
-# y=[22,18,3,24,3,7]
-# print(y.count(3))
-
-# z=[22,18,3,24,3,7]
-# print(z.index(18))
-
-# t3=(10,20,30,40)
-# print(min(t3))
-# print(max(t3))
-
-# t4=('Python','ReactJs','Swift')
-# print(min(t4))
-# print(max(t4))
-
-#sorted
-# t5=(40,50,10,20,100)
-# t6=tuple(sorted(t5))
-# print(t6)
-
+print("Student List:")
+for s in students:
+    print(s)
+    print(len(students))
